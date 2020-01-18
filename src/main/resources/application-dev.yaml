@@ -1,0 +1,26 @@
+ server:
+   port: 10014
+ spring:
+   application:
+     name: blesscard-tradepush
+   bridgecard:
+     fulu:
+        apiUrl: http://pre.openapi.fulu.com/api/getway
+        appKey: i4esv1l+76l/7NQCL3QudG90Fq+YgVfFGJAWgT+7qO1Bm9o/adG/1iwO2qXsAXNB
+        appSecret: 0a091b3aa4324435aab703142518a8f7
+   oauth:
+     youzan:
+        grantId: 43897649
+        clientId: 4a687ef5d560aa3243
+        clientSecret: 616df17d775e42742866e0aa9775aa7c
+   rocketmq:
+     accessKey: LTAI4FmztQbBMPNjeHVUDUAC
+     secretKey: 4lIYfYIfcaAY5m7EigzW9mgcxAKbsF
+     nameSrvAddr: http://MQ_INST_1405448123678450_BbyRkPiE.mq-internet-access.mq-internet.aliyuncs.com:80
+     groupId: GID-blesscard-tradepush
+     topics:
+        bridgeCard: buyBridgeCard
+     tags:
+        bridgeCard: buy-bridgecard
+     delays:
+        bridgeCard: 30000
